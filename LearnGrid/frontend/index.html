@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnGrid | Your Personal Learning Path</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>LearnGrid 🚀</h1>
+        <p>Enter any skill and get a customized learning roadmap.</p>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form id="skill-form">
+                <input type="text" id="skill-input" placeholder="e.g., Python, React, Data Science..." required>
+                <button type="submit">Generate Path</button>
+            </form>
+        </div>
+
+        <div id="loading-spinner" class="hidden">
+            <div class="spinner"></div>
+            <p>Generating your personalized roadmap...</p>
+        </div>
+
+        <div id="roadmap-container"></div>
+    </main>
+            </div>
+    </main>
+
+    <div id="quiz-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h3 id="quiz-topic">Quiz Time!</h3>
+            <p id="quiz-question">What is 2+2?</p>
+            <div id="quiz-options" class="quiz-options-grid">
+                </div>
+            <p id="quiz-feedback" class="hidden"></p>
+            <button id="close-modal-btn">Close</button>
+        </div>
+    </div>
+
+    <footer>
+
+
+    <footer>
+        <p>Built for the Vibe Coding Hackathon</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

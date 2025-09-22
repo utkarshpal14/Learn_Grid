@@ -1,0 +1,48 @@
+{
+  "skill": "JavaScript",
+  "modules": [
+    {
+      "title": "Module 1: JavaScript Fundamentals",
+      "subtopics": [
+        {
+          "title": "Variables, Data Types, and Operators",
+          "resources": { "youtube": "JavaScript variables and data types" }
+        },
+        {
+          "title": "Conditional Statements and Loops",
+          "resources": { "youtube": "JavaScript if else and for loops" }
+        },
+        {
+          "title": "Functions and Scope",
+          "resources": { "youtube": "JavaScript functions and scope explained" }
+        }
+      ]
+    },
+    {
+      "title": "Module 2: DOM Manipulation",
+      "subtopics": [
+        {
+          "title": "Selecting and Modifying Elements",
+          "resources": { "youtube": "JavaScript DOM manipulation tutorial" }
+        },
+        {
+          "title": "Event Handling (Clicks, Forms)",
+          "resources": { "youtube": "JavaScript event listeners" }
+        }
+      ]
+    },
+    {
+        "title": "Module 3: Asynchronous JavaScript",
+        "subtopics": [
+          {
+            "title": "Callbacks, Promises, and Async/Await",
+            "resources": { "youtube": "Async Await JavaScript tutorial" }
+          },
+          {
+            "title": "Fetching API Data",
+            "resources": { "youtube": "JavaScript fetch API" }
+          }
+        ]
+      }
+  ]
+}

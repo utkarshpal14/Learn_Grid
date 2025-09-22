@@ -1,0 +1,210 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --background-color: #f8fafc;
+    --text-color: #1e293b;
+    --card-background: #ffffff;
+    --border-color: #e2e8f0;
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* --- Layout & Typography --- */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* --- Form --- */
+.form-container {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+#skill-form {
+    display: flex;
+    gap: 1rem;
+}
+
+#skill-input {
+    flex-grow: 1;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: box-shadow 0.2s;
+}
+
+#skill-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #c7d2fe;
+}
+
+#skill-form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#skill-form button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* --- Loading Spinner --- */
+#loading-spinner {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.1rem;
+    color: #64748b;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--border-color);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* --- Roadmap Display --- */
+#roadmap-container {
+    margin-top: 2rem;
+}
+
+.roadmap-header {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.roadmap-header span {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.module {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.module-header {
+    padding: 1rem 1.5rem;
+    background-color: #f1f5f9;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.module-header::after {
+    content: '▼';
+    transition: transform 0.3s;
+}
+
+.module.active .module-header::after {
+    transform: rotate(180deg);
+}
+
+.module-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.subtopic-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.subtopic-list li {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtopic-list li:last-child {
+    border-bottom: none;
+}
+
+.youtube-link {
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    flex-shrink: 0; /* Prevents the button from shrinking */
+    margin-left: 1rem;
+}
+
+.youtube-link:hover {
+    background-color: #cc0000;
+}
+
+/* --- Responsive Design for small screens --- */
+@media (max-width: 600px) {
+    #skill-form {
+        flex-direction: column;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+}

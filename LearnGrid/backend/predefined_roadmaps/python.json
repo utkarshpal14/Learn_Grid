@@ -1,0 +1,35 @@
+{
+  "skill": "Python",
+  "modules": [
+    {
+      "title": "Module 1: Python Fundamentals",
+      "subtopics": [
+        {
+          "title": "Variables & Data Types",
+          "resources": { "youtube": "Python variables tutorial for beginners" }
+        },
+        {
+          "title": "Control Flow (If/Else)",
+          "resources": { "youtube": "Python if else statements" }
+        },
+        {
+          "title": "Loops (For/While)",
+          "resources": { "youtube": "Python for and while loops explained" }
+        }
+      ]
+    },
+    {
+      "title": "Module 2: Data Structures",
+      "subtopics": [
+        {
+          "title": "Lists and Tuples",
+          "resources": { "youtube": "Python lists and tuples" }
+        },
+        {
+          "title": "Dictionaries and Sets",
+          "resources": { "youtube": "Python dictionaries guide" }
+        }
+      ]
+    }
+  ]
+}

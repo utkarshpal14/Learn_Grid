@@ -1,0 +1,40 @@
+{
+    "skill": "Digital Marketing",
+    "modules": [
+      {
+        "title": "Module 1: Marketing Fundamentals",
+        "subtopics": [
+          {
+            "title": "Search Engine Optimization (SEO) Basics",
+            "resources": { "youtube": "SEO for beginners" }
+          },
+          {
+            "title": "Content Marketing Strategy",
+            "resources": { "youtube": "What is content marketing" }
+          }
+        ]
+      },
+      {
+        "title": "Module 2: Social Media & Ads",
+        "subtopics": [
+          {
+            "title": "Social Media Marketing (SMM)",
+            "resources": { "youtube": "Social media marketing strategy" }
+          },
+          {
+            "title": "Pay-Per-Click (PPC) Advertising",
+            "resources": { "youtube": "Google Ads tutorial for beginners" }
+          }
+        ]
+      },
+      {
+          "title": "Module 3: Analytics",
+          "subtopics": [
+            {
+              "title": "Introduction to Google Analytics",
+              "resources": { "youtube": "Google Analytics 4 tutorial" }
+            }
+          ]
+        }
+    ]
+  }
